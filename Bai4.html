@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai4</title>
+</head>
+<body>
+<script>
+    let array = [];
+    array[0] = 1;
+    array[1] = 1;
+    let i=2;
+    while(array[i-1]%5!==0){
+        array[i] = array[i - 1] + array[i - 2];
+        i++;
+    }alert(array[i-1]);
+</script>
+</body>
+</html>
