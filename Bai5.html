@@ -6,27 +6,18 @@
 </head>
 <body>
 <script>
-    let number = Number(prompt("Nhap n: "));
-    let sum = 0;
-    let array = [];
-    if (number === 1) {
-        array[0] = 1;
-    }
-    if (number === 2) {
-        array[0] = 1;
-        array[1] = 1;
-    } else {
-        array[0] = 1;
-        array[1] = 1;
+    function sumFibo(number) {
+        let arr = [];
+        arr[0] = 0;
+        arr[1] = 1;
+        let sum = 1;
         for (let i = 2; i < number; i++) {
-            array[i] = array[i - 1] + array[i - 2];
+            arr[i] = arr[i - 1] + arr[i - 2];
+            sum += arr[i];
         }
+        return sum;
     }
-    for (let j = 0; j < array.length; j++) {
-        sum += array[j];
-    }
-    alert(sum);
-
+    console.log(sumFibo(20));
 
 </script>
 </body>

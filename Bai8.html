@@ -5,17 +5,16 @@
     <title>Bai8</title>
 </head>
 <body>
-<button type="button" onclick="InputNumber()">PLAY</button>
+<button onclick="InputNumber()" type="button">PLAY</button>
 <script>
     function InputNumber() {
         let First = Number(prompt("Nhap dau tien:"));
         let Last = Number(prompt("Nhap so cuoi:"));
         let numberGuess = Number(prompt("Ban thu doan xem: "));
-        let random = Math.floor(Math.random()*(Last-First)) + First;
-        if(Math.round(numberGuess)==Math.round(random)){
+        let random = Math.floor(Math.random() * (Last - First)) + First;
+        if (Math.round(numberGuess) === Math.round(random)) {
             alert("Tinggggggggggg");
-        }
-        else{
+        } else {
             alert("Teeeeeeeeeeeeee");
         }
     }

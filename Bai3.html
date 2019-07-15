@@ -9,22 +9,18 @@
 </style>
 <body>
 <script>
-    let number = Number(prompt("Nhap vao so luong so: "));
-    let array = [];
-    if (number === 1) {
-        array[0] = 1;
-    }
-    if (number == 2) {
-        array[0] = 1;
-        array[1] = 1;
-    } else {
-        array[0] = 1;
-        array[1] = 1;
+    function printFibo(number) {
+        let arr = [];
+        arr[0] = 0;
+        arr[1] = 1;
+        document.write(arr[0] + " " + arr[1] + " ");
         for (let i = 2; i < number; i++) {
-            array[i] = array[i - 1] + array[i - 2];
+            arr[i] = arr[i - 1] + arr[i - 2];
+            document.write(arr[i] + " ");
         }
     }
-    document.write(array.join());
+
+    printFibo(20);
 </script>
 </body>
 </html>
